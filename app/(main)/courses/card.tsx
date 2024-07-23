@@ -29,7 +29,7 @@ export const Card = ({
     >
       <div className="min-h-[24px] w-full flex items-center justify-end">
         {active && (
-          <div className="bg-green-600 flex items-center justify-center p-1.5 rounded-md">
+          <div className="bg-green-600 flex items-center justify-center p-1.5 rounded-full">
             <Check className="text-white stroke-[4] h-4 w-4" />
           </div>
         )}
