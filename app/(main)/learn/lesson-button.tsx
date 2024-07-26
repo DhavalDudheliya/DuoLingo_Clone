@@ -31,16 +31,16 @@ export const LessonButton = ({
   let indentationLevel;
 
   if (cycleIndex <= 2) {
-    indentationLevel = cycleIndex;
+    indentationLevel = cycleIndex; // 0 = 0, 1 = 1, 2 = 2
   } else if (cycleIndex <= 4) {
-    indentationLevel = 4 - cycleIndex;
+    indentationLevel = 4 - cycleIndex; // 3 = 1, 4 = 0
   } else if (cycleIndex <= 6) {
-    indentationLevel = 4 - cycleIndex;
+    indentationLevel = 4 - cycleIndex; // 5 = -1, 6 = -2
   } else {
-    indentationLevel = cycleIndex - 8;
+    indentationLevel = cycleIndex - 8; // 7 = -1, 8 = 0
   }
 
-  const rightPosition = indentationLevel * 40;
+  const rightPosition = indentationLevel * 40; // 0 = 0px, 1 = 40px, 2 = 80px, 3 = 40px, 4 = 0px, 5 = -40px, 6 = -80px, 7 = -40px, 8 = 0px(reset to starting position), 9...10.. and so on....
 
   const isFirst = index === 0;
   const isLast = index === totalCount;
@@ -55,6 +55,7 @@ export const LessonButton = ({
       href={href}
       aria-disabled={locked}
       style={{ pointerEvents: locked ? "none" : "auto" }}
+      // className={`${locked ? "" : "cursor-pointer"} `}
     >
       <div
         className="relative"
@@ -98,7 +99,21 @@ export const LessonButton = ({
             </CircularProgressbarWithChildren>
           </div>
         ) : (
-          <div>something</div>
+          <Button
+            size="rounded"
+            variant={locked ? "locked" : "secondary"}
+            className="h-[70px] w-[70px] border-b-8"
+          >
+            <Icon
+              className={cn(
+                "h-10 w-10",
+                locked
+                  ? "fill-neutral-400 text-neutral-400 stroke-neutral-400"
+                  : "fill-primary-foreground text-primary-foreground",
+                isCompleted && "fill-none stroke-[4]"
+              )}
+            />
+          </Button>
         )}
       </div>
     </Link>
