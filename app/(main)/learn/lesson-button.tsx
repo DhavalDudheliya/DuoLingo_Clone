@@ -72,6 +72,7 @@ export const LessonButton = ({
             </div>
             <CircularProgressbarWithChildren
               value={Number.isNaN(percentage) ? 0 : percentage}
+              // value={50}
               styles={{
                 path: {
                   stroke: "#4ade80",

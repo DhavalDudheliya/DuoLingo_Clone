@@ -1,16 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { CheckCircle, XCircle } from "lucide-react";
+import { CheckCircle, Loader2, XCircle } from "lucide-react";
 import { useKey, useMedia } from "react-use";
 
 type Props = {
   disabled?: boolean;
   onCheck: () => void;
   status: "correct" | "wrong" | "none" | "completed";
-  lessonId?: boolean;
+  lessonId?: number;
+  loading?: boolean;
 };
 
-export const Footer = ({ onCheck, status, disabled, lessonId }: Props) => {
+export const Footer = ({
+  onCheck,
+  status,
+  disabled,
+  lessonId,
+  loading,
+}: Props) => {
   useKey("Enter", onCheck, {}, [onCheck]);
   const isMobile = useMedia("(max-width: 1024px");
 
@@ -51,10 +58,16 @@ export const Footer = ({ onCheck, status, disabled, lessonId }: Props) => {
           size={isMobile ? "sm" : "lg"}
           variant={status === "wrong" ? "danger" : "secondary"}
         >
-          {status === "none" && "Check"}
-          {status === "correct" && "Next"}
-          {status === "wrong" && "Retry"}
-          {status === "completed" && "Continue"}
+          {loading ? (
+            <Loader2 className="animate-spin mx-[3.5px]" />
+          ) : (
+            <>
+              {status === "none" && "Check"}
+              {status === "correct" && "Next"}
+              {status === "wrong" && "Retry"}
+              {status === "completed" && "Continue"}
+            </>
+          )}
         </Button>
       </div>
     </footer>
