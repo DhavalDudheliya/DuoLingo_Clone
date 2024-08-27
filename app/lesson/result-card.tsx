@@ -1,12 +1,14 @@
+import { userSubscription } from "@/db/schema";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 type Props = {
   value: number;
   variant: "points" | "hearts";
+  userSubscription?: boolean;
 };
 
-export const ResultCard = ({ value, variant }: Props) => {
+export const ResultCard = ({ value, variant, userSubscription }: Props) => {
   const imageSrc = variant === "hearts" ? "/heart.svg" : "/points.svg";
 
   return (
@@ -35,12 +37,16 @@ export const ResultCard = ({ value, variant }: Props) => {
       >
         <Image
           alt="icon"
-          src={imageSrc}
+          src={
+            variant === "hearts" && userSubscription
+              ? "/infinity.png"
+              : imageSrc
+          }
           height={30}
           width={30}
           className="mr-1.5"
         />
-        {value}
+        {variant === "hearts" && userSubscription ? "" : value}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { challengeOptions, challenges } from "@/db/schema";
+import { challengeOptions, challenges, userSubscription } from "@/db/schema";
 import { boolean } from "drizzle-orm/mysql-core";
 import { useState, useTransition } from "react";
 import Confetti from "react-confetti";
@@ -27,7 +27,11 @@ type Props = {
     completed: boolean;
     challengeOptions: (typeof challengeOptions.$inferSelect)[];
   })[];
-  userSubscription: any;
+  userSubscription:
+    | (typeof userSubscription.$inferSelect & {
+        isActive: boolean;
+      })
+    | null;
 };
 
 export const Quiz = ({
@@ -191,8 +195,16 @@ export const Quiz = ({
             Great job! <br /> You&apos;ve completed the lesson.
           </h1>
           <div className="flex items-center gap-x-4 w-full">
-            <ResultCard variant="points" value={challenges.length * 10} />
-            <ResultCard variant="hearts" value={hearts} />
+            <ResultCard
+              userSubscription={userSubscription?.isActive}
+              variant="points"
+              value={challenges.length * 10}
+            />
+            <ResultCard
+              variant="hearts"
+              value={hearts}
+              userSubscription={userSubscription?.isActive}
+            />
           </div>
         </div>
         <Footer
