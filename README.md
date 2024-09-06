@@ -41,6 +41,38 @@ A modern language-learning platform inspired by Duolingo, built with cutting-edg
 
 ## 💻 Screenshots
 
+#### HomePage 🏠
+![Home Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/1.png?token=GHSAT0AAAAAACV63RMYYNB5R2SS3Y7EIIZEZW3CN7Q)
+
+#### Login Page 🔐
+![Login Page]()
+
+#### Learn Page 🙎🏻‍♂️
+![Learn Page]()
+
+#### Leaderboard 📝
+![Leaderboard]()
+
+#### Quests Page 🛏️
+![ Quests ]()
+
+#### Shop 📝
+![Shop Page]()
+
+#### Lesson page 📊
+![Leson Page]()
+
+#### Payment 💵
+![payment]()
+
+![payment]()
+
+![payment]()
+
+#### Admin Dashboard 📊
+![Admin Dashboard]()
+
+
 ## 🔧 Upcoming Features
 
 - Streak Counting
