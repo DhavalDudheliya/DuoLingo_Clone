@@ -45,32 +45,44 @@ A modern language-learning platform inspired by Duolingo, built with cutting-edg
 ![Home Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/1.png)
 
 #### Login Page 🔐
-![Login Page]()
+![Login Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/2.png)
 
 #### Learn Page 🙎🏻‍♂️
-![Learn Page]()
+![Learn Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/3.png)
+
+![Learn Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/4.png)
 
 #### Leaderboard 📝
-![Leaderboard]()
+![Leaderboard](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/5.png)
 
 #### Quests Page 🛏️
-![ Quests ]()
+![ Quests ](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/6.png)
 
 #### Shop 📝
-![Shop Page]()
+![Shop Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/7.png)
 
 #### Lesson page 📊
-![Leson Page]()
+![Leson Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/8.png)
+
+![Leson Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/9.png)
+
+![Leson Page](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/10.png)
 
 #### Payment 💵
-![payment]()
+![payment](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/11.png)
 
-![payment]()
+![payment](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/12.png)
 
-![payment]()
+![payment](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/13.png)
 
 #### Admin Dashboard 📊
-![Admin Dashboard]()
+![Admin Dashboard](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/14.png)
+
+![Admin Dashboard](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/15.png)
+
+![Admin Dashboard](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/16.png)
+
+![Admin Dashboard](https://raw.githubusercontent.com/DhavalDudheliya/Project-SS/main/lingo/17.png)
 
 
 ## 🔧 Upcoming Features
